@@ -592,7 +592,7 @@ If this project is used, cite the future manuscript:
 ```bibtex
 @article{rul_temporal_feature_framework_2026,
   title   = {An Explainable Temporal Degradation Feature Framework for Remaining Useful Life Prediction and Risk Assessment of Industrial Systems},
-  author  = {Author Name},
+  author  = {Mochamad Rizal Fauzan},
   journal = {To be submitted},
   year    = {2026}
 }
