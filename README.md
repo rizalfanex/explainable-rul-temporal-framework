@@ -213,7 +213,8 @@ $$
 The percentage-change feature is:
 
 $$
-\Delta_{\%} x_{u,t}^{(j)} = \frac{x_{u,t}^{(j)} - x_{u,t-1}^{(j)}}{\left|x_{u,t-1}^{(j)}\right| + \epsilon}
+\Delta_{\mathrm{pct}} x_{u,t}^{(j)} =
+\frac{x_{u,t}^{(j)} - x_{u,t-1}^{(j)}}{|x_{u,t-1}^{(j)}| + \epsilon}
 $$
 
 For a rolling window $w \in \{5,10,20\}$, the rolling mean is:
@@ -274,10 +275,14 @@ The framework includes:
 4. Feature-group ablation study.
 5. Comparison between temporal features and deep sequence baselines.
 
-For a metric $m(\cdot)$ estimated through bootstrap samples $b = 1,\ldots,B$, the 95% confidence interval is obtained as:
+For a metric $m(\cdot)$ estimated through bootstrap samples $b = 1, \ldots, B$, the 95 percent confidence interval is obtained as:
 
 $$
-\mathrm{CI}_{95\%} = \left[Q_{0.025}\left(m_b\right), Q_{0.975}\left(m_b\right)\right]
+\mathrm{CI}_{0.95} =
+[
+Q_{0.025}(m_b),
+Q_{0.975}(m_b)
+]
 $$
 
 ---
