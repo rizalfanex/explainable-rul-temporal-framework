@@ -30,7 +30,6 @@
 - [4. Experimental Pipeline](#4-experimental-pipeline)
   - [4.1 Environment Setup](#41-environment-setup)
   - [4.2 Full Sequential Pipeline](#42-full-sequential-pipeline)
-  - [4.3 Prepared PowerShell Pipelines](#43-prepared-powershell-pipelines)
 - [5. Main Results](#5-main-results)
   - [5.1 Best RUL Model by Subset](#51-best-rul-model-by-subset)
   - [5.2 Risk-Stage Classification](#52-risk-stage-classification)
@@ -340,16 +339,6 @@ python src\17_generate_method_diagrams.py
 python src\18_generate_readme_reproducibility.py
 python src\19_finalize_related_work_table.py
 ```
-
-## 4.3 Prepared PowerShell Pipelines
-
-Two prepared PowerShell runners are available:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File run_overnight_pipeline.ps1
-powershell -ExecutionPolicy Bypass -File run_final_q1_pipeline.ps1
-```
-
 ---
 
 # 5. Main Results
