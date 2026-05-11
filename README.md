@@ -3,7 +3,7 @@
 > **A reproducible predictive-maintenance research pipeline for Remaining Useful Life (RUL) prediction, degradation risk-stage classification, temporal feature ablation, bootstrap statistical validation, deep sequence comparison, and SHAP-based explainability on the NASA C-MAPSS turbofan engine benchmark.**
 
 <p align="center">
-  <img src="outputs/figures/fig_framework_architecture.png" alt="Overall framework architecture" width="900"/>
+  <img src="paper/figures/fig_framework_architecture.png" alt="Overall framework architecture" width="900"/>
 </p>
 
 <p align="center"><b>Fig. 1.</b> Overall framework for explainable RUL prediction and risk assessment.</p>
@@ -138,7 +138,7 @@ train_FD004.txt, test_FD004.txt, RUL_FD004.txt
 # 3. Methodology
 
 <p align="center">
-  <img src="outputs/figures/fig_temporal_feature_pipeline.png" alt="Temporal feature engineering pipeline" width="900"/>
+  <img src="paper/figures/fig_temporal_feature_pipeline.png" alt="Temporal feature engineering pipeline" width="900"/>
 </p>
 
 <p align="center"><b>Fig. 2.</b> Temporal degradation feature engineering pipeline.</p>
