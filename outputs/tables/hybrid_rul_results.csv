@@ -1,0 +1,5 @@
+subset,target,model,window,stride_train,stride_test,num_sequence_features,num_tabular_features,MAE,RMSE,R2,NASA_Score,train_time_sec,train_windows,test_windows
+FD001,RUL_capped,HybridGRUFeatureAttention,30,3,3,24,404,13.98434,18.179773,0.627079,19275.842613,3.272045,5947,3433
+FD002,RUL_capped,HybridGRUFeatureAttention,30,3,3,24,404,14.620736,19.467807,0.602934,81584.596985,5.203843,15490,8923
+FD003,RUL_capped,HybridGRUFeatureAttention,30,3,3,24,404,8.613619,13.107488,0.755622,15868.093126,2.558279,7309,4595
+FD004,RUL_capped,HybridGRUFeatureAttention,30,3,3,24,404,13.267459,18.786538,0.523752,186111.26039,6.041656,18087,11442

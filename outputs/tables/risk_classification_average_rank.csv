@@ -1,0 +1,7 @@
+model,F1_Macro_rank,Accuracy_rank
+LightGBM,2.5,4.75
+LogisticRegression,2.75,4.5
+CatBoost,3.75,3.75
+RandomForest,3.75,1.75
+XGBoost,3.75,4.75
+ExtraTrees,4.5,1.5

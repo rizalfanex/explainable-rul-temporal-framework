@@ -1,0 +1,7 @@
+model,RMSE_rank,MAE_rank
+CatBoost,1.0,2.25
+ExtraTrees,2.75,3.75
+XGBoost,2.75,2.75
+LightGBM,3.5,1.5
+RandomForest,5.25,4.75
+Ridge,5.75,6.0

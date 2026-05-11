@@ -1,0 +1,5 @@
+subset,target,model,ablation,num_features,MAE,RMSE,R2,NASA_Score,train_time_sec,inference_time_sec,train_rows,test_rows
+FD001,RUL_capped,CatBoost,A8_rolling_plus_cycle,317,10.068059,15.552995,0.681973,62292.807892,4.438414,0.010364,20631,13096
+FD002,RUL_capped,CatBoost,A5_raw_plus_cycle,23,11.483041,16.975135,0.653237,189621.308596,2.187537,0.004048,53759,33991
+FD003,RUL_capped,CatBoost,A9_full_proposed,404,7.354899,12.084161,0.763278,50177.16668,5.452246,0.010939,24720,16596
+FD004,RUL_capped,CatBoost,A8_rolling_plus_cycle,317,9.557471,15.492382,0.629844,406324.736954,7.044669,0.015089,61249,41214
