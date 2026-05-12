@@ -431,8 +431,8 @@ SHAP analysis shows that:
 
 | Figure | Path |
 |:--|:--|
-| Framework architecture | `outputs/figures/fig_framework_architecture.png` |
-| Temporal feature pipeline | `outputs/figures/fig_temporal_feature_pipeline.png` |
+| Framework architecture | `paper/figures/fig_framework_architecture.png` |
+| Temporal feature pipeline | `paper/figures/fig_temporal_feature_pipeline.png` |
 | Final model comparison | `outputs/figures/fig_final_model_comparison_rmse.png` |
 | Ablation RMSE comparison | `outputs/figures/fig_ablation_rmse_by_subset.png` |
 | Feature count vs RMSE | `outputs/figures/fig_ablation_feature_count_vs_rmse.png` |
@@ -502,8 +502,6 @@ predictive-maintenance-rul-ieee/
 │   ├── 18_generate_readme_reproducibility.py
 │   └── 19_finalize_related_work_table.py
 │
-├── run_overnight_pipeline.ps1
-├── run_final_q1_pipeline.ps1
 ├── requirements.txt
 ├── environment_main.yml
 └── README.md
@@ -522,12 +520,30 @@ pip freeze > requirements.txt
 
 ## 8.2 Reproduce Major Results
 
+Run the complete pipeline sequentially:
+
 ```powershell
 conda activate main
-powershell -ExecutionPolicy Bypass -File run_overnight_pipeline.ps1
-powershell -ExecutionPolicy Bypass -File run_final_q1_pipeline.ps1
+python src\00_check_environment.py
+python src\01_data_audit.py
+python src\02_build_rul_labels.py
+python src\03_feature_engineering.py
+python src\04_train_ml_baselines.py
+python src\05_generate_baseline_figures.py
+python src\06_train_risk_classification.py
+python src\07_generate_risk_classification_figures.py
+python src\08_explain_shap_rul.py
+python src\09_ablation_rul_features.py
+python src\10_statistical_validation.py
+python src\11_generate_q1_research_assets.py
+python src\12_deep_sequence_baselines.py
+python src\13_hybrid_feature_sequence_model.py
+python src\14_generate_final_ieee_assets.py
+python src\15_generate_manuscript_draft.py
+python src\16_create_related_work_draft.py
 python src\17_generate_method_diagrams.py
 python src\18_generate_readme_reproducibility.py
+python src\19_finalize_related_work_table.py
 ```
 
 ## 8.3 Claim Boundary
@@ -535,6 +551,8 @@ python src\18_generate_readme_reproducibility.py
 This repository should be positioned as an **explainable temporal degradation feature framework**.
 
 The hybrid feature-sequence model is included as an exploratory fusion baseline and should **not** be claimed as the best-performing method.
+
+Local PowerShell runner scripts may be used privately, but they are intentionally not required for repository reproduction; the public pipeline is fully reproducible through the numbered Python scripts in `src/`.
 
 ---
 
